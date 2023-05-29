@@ -6,6 +6,7 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
 import { AppRoutingModule } from './app-routing.module';
+import {MatRippleModule} from "@angular/material/core";
 
 //Components
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ConnectComponent } from './connect/connect.component';
 import { MoreComponent } from './more/more.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatRippleModule
   ],
   providers: [],
   bootstrap: [AppComponent, NavbarComponent]
