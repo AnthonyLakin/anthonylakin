@@ -16,6 +16,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ConnectComponent } from './connect/connect.component';
 import { MoreComponent } from './more/more.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
+import {MatCardModule} from "@angular/material/card";
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
     MatToolbarModule,
     MatIconModule,
     AppRoutingModule,
-    MatRippleModule
+    MatRippleModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent, NavbarComponent]

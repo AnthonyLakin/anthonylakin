@@ -26,9 +26,14 @@
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/jarallax/dist/jarallax.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jarallax/dist/jarallax.min.js",
+              "node_modules/jarallax/dist/jarallax-element.min.js",
+              "node_modules/jarallax/dist/jarallax-video.min.js"
+            ]
           },
           "configurations": {
             "production": {
