@@ -17,6 +17,8 @@ import { ConnectComponent } from './connect/connect.component';
 import { MoreComponent } from './more/more.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import {MatCardModule} from "@angular/material/card";
+import {MatDividerModule} from "@angular/material/divider";
+import {NgOptimizedImage} from "@angular/common";
 
 
 @NgModule({
@@ -29,16 +31,18 @@ import {MatCardModule} from "@angular/material/card";
     MoreComponent,
     AboutmeComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatIconModule,
-    AppRoutingModule,
-    MatRippleModule,
-    MatCardModule
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatButtonModule,
+        MatToolbarModule,
+        MatIconModule,
+        AppRoutingModule,
+        MatRippleModule,
+        MatCardModule,
+        MatDividerModule,
+        NgOptimizedImage
+    ],
   providers: [],
   bootstrap: [AppComponent, NavbarComponent]
 })

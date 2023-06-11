@@ -1,8 +1,15 @@
 .example-spacer {
-  flex: 1 1 auto;
+  flex: auto;
 }
 
 a {
   padding: 0 2.5em;
+  text-decoration: none;
+}
+
+mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 

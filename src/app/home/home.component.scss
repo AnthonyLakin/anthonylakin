@@ -1,1 +1,71 @@
+body {
+  background-color: red;
+}
+
+.container {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+header {
+  position: relative;
+  display: flex;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.background {
+  transform: translateZ(-10px) scale(2);
+}
+
+.foreground {
+  transform: translateZ(-5px) scale(1.5);
+  filter: brightness(.5);
+}
+
+.face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  color: white;
+}
+
+
+.title_text {
+  position: relative;
+  top: 30%;
+  margin: auto 15em;
+
+}
+
+.title_text > div {
+  width: 50%;
+}
+
+h1 {
+  //text-shadow: 0 0 5px white;
+}
+
+
+article {
+  background-color: black;
+  color: white;
+  padding: 3em 15em;
+}
+
+
+
 
