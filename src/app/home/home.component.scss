@@ -55,16 +55,35 @@ img {
   width: 50%;
 }
 
-h1 {
-  //text-shadow: 0 0 5px white;
-}
-
-
 article {
-  background-color: black;
-  color: white;
-  padding: 3em 15em;
+  padding: 5em 18em 1em;
+  //background-color: red;
 }
+
+.head_para_center {
+  color: white;
+  text-align: center;
+}
+
+.head_para_center > div {
+  margin: 0 20%;
+}
+
+.three_columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.columnCard {
+  text-align: center;
+  color: white;
+}
+
+.img {
+  height: 150px;
+  width: 150px;
+}
+
 
 
 
