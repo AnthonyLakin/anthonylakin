@@ -5,7 +5,8 @@ html, body {
 body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   margin: 0;
-  overflow: hidden;
+  /*overflow: hidden;*/
+  /*background-color: black;*/
 }
 
 h1 {

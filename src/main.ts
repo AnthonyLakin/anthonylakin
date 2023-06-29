@@ -10,14 +10,14 @@ import {AboutmeComponent} from "./app/aboutme/aboutme.component";
 import {MoreComponent} from "./app/more/more.component";
 
 export const routes: Route[] = [
-  { path: '', component: HomeComponent },
-  {path: 'home', redirectTo: ''},
-  { path: 'projects', component: ProjectsComponent },
-  { path: 'aboutme', component: AboutmeComponent },
-  { path: 'connect', component: ConnectComponent },
-  { path: 'more', component: MoreComponent },
-  { path: '404', component: ErrorComponent},
-  {path: '**', redirectTo: '/404'}
+  { path: '', component: HomeComponent},
+  { path: 'projects', loadComponent: () => import('./app/projects/projects.component').then(c => c.ProjectsComponent) },
+  { path: 'aboutme', loadComponent: () => import('./app/aboutme/aboutme.component').then(c => c.AboutmeComponent) },
+  { path: 'connect', loadComponent: () => import('./app/connect/connect.component').then(c => ConnectComponent)  },
+  { path: 'more', loadComponent: () => import('./app/more/more.component').then(c => c.MoreComponent) },
+  { path: '404', loadComponent: () => import('./app/error/error.component').then(c => c.ErrorComponent) },
+  { path: 'home', redirectTo: ''},
+  { path: '**', redirectTo: '/404'}
 ]
 
 
