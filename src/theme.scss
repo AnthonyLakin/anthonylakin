@@ -1,17 +1,94 @@
 @use '@angular/material' as mat;
-@include mat.core();
 
-$anthonylakin-primary: mat.define-palette(mat.$indigo-palette);
-$anthonylakin-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
-$anthonylakin-warn: mat.define-palette(mat.$red-palette);
+:root {
+  --primary: #00685b;
+  --black: #000;
+  --CardBorderRadius: .5em;
+  --bgColor: #dedede;
+  --cardBoxShadow: 0 9px 9px -4px #00000050;
+  --shadow-dark: rgba(0, 0, 0, 0.2);
 
-$anthonylakin-theme: mat.define-light-theme((
+}
+
+$primary-palette-light: (
+  50: #f8f8f8,
+  100: #efefef,
+  200: #e4e4e4,
+  300: #d2d2d2,
+  400: #adadad,
+  500: #8d8d8d,
+  600: #656565,
+  700: #525252,
+  800: #343434,
+  900: #141414,
+  A100 : #70ffdd,
+  A200 : #3dffd1,
+  A400 : #0affc5,
+  A700 : #00f0b7,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+
+$accent-palette-light: (
+  50: #e2f3f0,
+  100: #b9e2d9,
+  200: #8dd0c1,
+  300: #63bda8,
+  400: #49ae97,
+  500: #3b9f86,
+  600: #369179,
+  700: #30816a,
+  800: #2b715c,
+  900: #215441,
+  A100 : #96ffe5,
+  A200 : #63ffd8,
+  A400 : #30ffcb,
+  A700 : #17ffc4,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+
+$light-primary: mat.define-palette($primary-palette-light, $default: 900, $text: 50);
+$light-accent: mat.define-palette($accent-palette-light, $default: 500, $text: 50);
+$warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$light-theme: mat.define-light-theme((
   color: (
-    primary: $anthonylakin-primary,
-    accent: $anthonylakin-accent,
-    warn: $anthonylakin-warn,
+    primary: $light-primary,
+    accent: $light-accent,
+    warn: $warn,
   )
 ));
-
-@include mat.all-component-themes($anthonylakin-theme);
-
+@include mat.core();
+@include mat.core-theme($light-theme);
+@include mat.all-component-themes($light-theme);
