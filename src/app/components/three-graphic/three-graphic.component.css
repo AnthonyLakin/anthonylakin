@@ -1,0 +1,25 @@
+.container {
+  display: block;
+  color: white;
+  padding: 7em 4em;
+}
+
+article {
+  padding: 5em 18em 1em;
+//background-color: red;
+}
+
+.three_columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.columnCard {
+  text-align: center;
+  color: white;
+}
+
+.img {
+  height: 150px;
+  width: 150px;
+}

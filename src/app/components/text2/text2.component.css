@@ -18,17 +18,4 @@ article {
   margin: 0 20%;
 }
 
-.three_columns {
-  display: flex;
-  justify-content: space-between;
-}
 
-.columnCard {
-  text-align: center;
-  color: white;
-}
-
-.img {
-  height: 150px;
-  width: 150px;
-}
