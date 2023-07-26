@@ -1,0 +1,13 @@
+* {
+  color: var(--white);
+}
+
+.background {
+  display: inline;
+}
+
+mat-grid-list {
+  top: 10em;
+}
+
+
