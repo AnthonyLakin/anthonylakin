@@ -1,5 +1,7 @@
 import {Component } from '@angular/core';
 import {HomeHeadComponent} from "./home-head/home-head.component";
+import {HomeBody1Component} from "./home-body1/home-body1.component";
+import {MatListModule} from "@angular/material/list";
 
 
 @Component({
@@ -8,7 +10,9 @@ import {HomeHeadComponent} from "./home-head/home-head.component";
   styleUrls: ['./home.component.scss'],
   standalone: true,
   imports: [
-    HomeHeadComponent
+    HomeHeadComponent,
+    HomeBody1Component,
+    MatListModule
   ]
 })
 export class HomeComponent {

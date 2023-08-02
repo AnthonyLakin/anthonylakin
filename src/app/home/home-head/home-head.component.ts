@@ -1,26 +1,43 @@
-import { Component } from '@angular/core';
+import {AfterViewInit, Component, ElementRef, HostListener, ViewChild} from '@angular/core';
 import {CommonModule, NgOptimizedImage} from '@angular/common';
 import {MatGridListModule} from "@angular/material/grid-list";
 
-export interface Tile {
-  cols: number;
-  rows: number;
-  text: string;
-  border: string;
-}
+
 
 @Component({
   selector: 'app-home-head',
   standalone: true,
   imports: [CommonModule, NgOptimizedImage, MatGridListModule],
   templateUrl: './home-head.component.html',
-  styleUrls: ['./home-head.component.css']
+  styleUrls: ['./home-head.component.scss']
 })
-export class HomeHeadComponent {
-  tiles: Tile[] = [
-    {text: 'Tile 1', cols: 2, rows: 1 ,border: '3px double purple'},
-    {text: 'Tile 2', cols: 2, rows: 1 ,border: '3px double red'},
-    {text: 'Tile 3', cols: 2, rows: 1 ,border: '3px double skyblue'},
-    {text: 'Tile 4', cols: 2, rows: 1 ,border: '3px double yellow'},
-  ];
+
+export class HomeHeadComponent implements AfterViewInit{
+
+  @ViewChild("topLayer") topLayer!: ElementRef;
+  @ViewChild("midLayer") midLayer!: ElementRef;
+  @ViewChild("backLayer") backLayer!: ElementRef;
+  constructor(private elementRef: ElementRef) {
+  }
+  ngAfterViewInit() {
+    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = 'black'
+  }
+
+
+  @HostListener("document:scroll") scrollHandler() {
+    let scrollY = document.documentElement.scrollTop;
+    let scrollHeight = document.documentElement.clientHeight;
+    // console.log(scrollY)
+    let topRate = - scrollY/7;
+    let midRate = - scrollY/5;
+    let slowRate = - scrollY/3;
+    this.topLayer.nativeElement.style.setProperty('transform', 'translateY(' + -(topRate) + 'px');
+    this.midLayer.nativeElement.style.setProperty('transform', 'translateY(' + -(midRate) + 'px');
+    this.backLayer.nativeElement.style.setProperty('transform', 'translateY(' + -(slowRate) + 'px');
+    // if (scrollY/scrollHeight > .15) {
+    //   this.midLayer.nativeElement.style.setProperty('opacity', 1.3- (scrollY/scrollHeight));
+    // }
+
+  }
+
 }

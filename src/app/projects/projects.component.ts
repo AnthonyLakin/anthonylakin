@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {AfterViewInit, Component, ElementRef} from '@angular/core';
 import {MatCardModule} from "@angular/material/card";
 
 @Component({
@@ -10,6 +10,13 @@ import {MatCardModule} from "@angular/material/card";
     ],
     standalone: true
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements AfterViewInit{
+
+  constructor(private elementRef: ElementRef) {
+  }
+
+  ngAfterViewInit() {
+    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = 'white'
+  }
 
 }

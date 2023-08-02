@@ -1,0 +1,83 @@
+* {
+  color: var(--white);
+}
+
+mat-grid-tile {
+  //border: solid 1px white;
+}
+
+mat-grid-list {
+  height: 40em;
+}
+
+.art1 {
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  //background-color: green;
+  div {
+    height: .1em;
+    display: block;
+    background-color: var(--white);
+    margin-bottom: 4em;
+  }
+}
+
+.art1 div:nth-child(2) {
+  margin-left: 25%;
+}
+.art1 div:nth-child(3) {
+  margin-left: 50%;
+}
+
+.line {
+  height: 80%;
+  position: absolute;
+  left: 20%;
+  width: 2em;
+}
+
+.dotPath {
+  position: relative;
+  height: 100%;
+  width: calc(50% - 1.5px);
+}
+
+.dotPath>span {
+  height: 50px;
+  width: 50px;
+}
+
+.dotPath>.dots {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 2px;
+  height: calc(100% - 1em);
+  background-image: linear-gradient(to top, white 50%, transparent 0%);
+  background-size: 4px 30px;
+  background-repeat: repeat-y;
+  background-position: 0 top;
+  animation-name: dots-line;
+  animation-duration: 30s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes dots-line {
+  from {
+    background-position: 100% top;
+  }
+  to {
+    background-position: 0 bottom;
+  }
+}
+
+
+
+
+
+

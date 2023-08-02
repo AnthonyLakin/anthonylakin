@@ -10,9 +10,9 @@ import {Text2Component} from "../text2/text2.component";
   templateUrl: './full-screen-header.component.html',
   styleUrls: ['./full-screen-header.component.scss']
 })
-export class FullScreenHeaderComponent implements AfterViewInit{
+export class FullScreenHeaderComponent {
 
-  @ViewChild("topLayer") topLayer!: ElementRef;
+/*  @ViewChild("topLayer") topLayer!: ElementRef;
   @ViewChild("midLayer") midLayer!: ElementRef;
   @ViewChild("backLayer") backLayer!: ElementRef;
 constructor(private elementRef: ElementRef) {
@@ -36,6 +36,6 @@ constructor(private elementRef: ElementRef) {
       this.midLayer.nativeElement.style.setProperty('opacity', 1.3- (scrollY/scrollHeight));
     }
 
-  }
+  }*/
 
 }

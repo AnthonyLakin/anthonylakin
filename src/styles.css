@@ -1,5 +1,6 @@
 body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  /*background-color: var(--black);*/
   margin: 0;
 }
 
@@ -12,7 +13,20 @@ h3 {
 }
 
 .margins {
-  margin: 0 10em;
+  margin: 0 10%;
+}
+
+.margins * {
+  display: block;
+}
+
+.gridCell {
+  width: 100%;
+  height: 100%;
+}
+
+.gridCell div {
+  position: absolute;
 }
 
 

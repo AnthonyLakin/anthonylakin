@@ -1,12 +1,29 @@
-<div class="imgWrapper">
-  <img class="background" ngSrc="../../../assets/img/home/mountains1.jpg" alt="background" fill>
-  <mat-grid-list cols="4" rowHeight="100px" gutterSize="5px">
-  <mat-grid-tile *ngFor="let tile of tiles"
-                 [colspan]="tile.cols"
-                 [rowspan]="tile.rows"
-                 [style.border]="tile.border">
-    {{tile.text}}
-  </mat-grid-tile>
+<div class="imgWrapper"  (scroll)="scrollHandler()">
+  <div #backLayer class="backgroundImg"></div>
+  <mat-grid-list cols="2" rowHeight="fit">
+    <mat-grid-tile [colspan]="1.25" [rowspan]="2" class="text">
+      <div class="gridCell">
+        <div>
+          <h1>Well, hello there</h1>
+        <p>Let me guess you were just randomly surfing the web, happened to Google “handsome young man who develops websites” tried a few links, and landed here? </p>
+        </div>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]=".75" [rowspan]="6">
+      <div class="imgSquare" #midLayer></div>
+      <div class="imgContainer">
+        <img #topLayer class="cutOut" ngSrc="../../../assets/img/home/anthonyCutOut2.png" alt="anthony" fill></div>
+    </mat-grid-tile>
+
+    <mat-grid-tile [rowspan]="4">
+      <div class="line">
+        <div class="arrowDown"></div>
+        <div class="dotPath">
+          <span class="dots"></span>
+        </div>
+      </div>
+
+    </mat-grid-tile>
   </mat-grid-list>
 
 </div>
