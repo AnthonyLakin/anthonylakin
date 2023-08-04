@@ -1,0 +1,41 @@
+.head {
+  width: 100%;
+  height: 12em;
+  top: 0;
+  display: flex;
+  background-color: var(--primaryLight);
+  color: var(--white);
+  div {
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+.headBars {
+  width: 10em;
+  display: flex;
+  left: 0;
+  transform: translateY(-50%);
+  right: 0;
+  margin: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 3.5em;
+  div {
+    width: 100%;
+    height: 20%;
+  }
+}
+
+.headBars div:nth-child(1) {
+  background-color: var(--white);
+  top: 0;
+}
+
+.headBars div:nth-child(2) {
+  background-color: var(--primaryLight);
+  bottom: 0;
+}
+

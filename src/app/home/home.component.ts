@@ -2,6 +2,7 @@ import {Component } from '@angular/core';
 import {HomeHeadComponent} from "./home-head/home-head.component";
 import {HomeBody1Component} from "./home-body1/home-body1.component";
 import {MatListModule} from "@angular/material/list";
+import {HomeBody2Component} from "./home-body2/home-body2.component";
 
 
 @Component({
@@ -12,7 +13,8 @@ import {MatListModule} from "@angular/material/list";
   imports: [
     HomeHeadComponent,
     HomeBody1Component,
-    MatListModule
+    MatListModule,
+    HomeBody2Component
   ]
 })
 export class HomeComponent {

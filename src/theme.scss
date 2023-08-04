@@ -1,7 +1,10 @@
 @use '@angular/material' as mat;
 
 :root {
-  --primary: #DAEAFF;
+  --primaryLight: #6895CE;
+  --primaryDark: #DAEAFF;
+  --accentLight: #009B8F;
+  --accentDark: #00D3C2;
   --black: #252525;
   --white: #EBEBEB;
   --CardBorderRadius: .5em;
