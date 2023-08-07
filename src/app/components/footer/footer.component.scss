@@ -1,0 +1,42 @@
+:host(footer) {
+  --footerPrimary: #7D7D7D;
+  --footerBG: #E7E7E7
+}
+
+footer {
+  width: 100%;
+  background-color: var(--footerBG);
+  height: 15em;
+  display: flex;
+}
+
+.container {
+  width: 25%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  * {
+    margin: .5em 0;
+    color: var(--footerPrimary);
+  }
+  span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    * {
+      text-decoration: none;
+    }
+  }
+}
+
+img {
+  width: 1.5em;
+  height: auto;
+}
+
+
+
+

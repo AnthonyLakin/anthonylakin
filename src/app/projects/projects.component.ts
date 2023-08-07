@@ -1,6 +1,9 @@
 import {AfterViewInit, Component, ElementRef} from '@angular/core';
 import {MatCardModule} from "@angular/material/card";
 import {HeaderComponent} from "../components/header/header.component";
+import {MatGridListModule} from "@angular/material/grid-list";
+import {CardsComponent} from "./cards/cards.component";
+import {FooterComponent} from "../components/footer/footer.component";
 
 @Component({
     selector: 'app-projects',
@@ -8,7 +11,10 @@ import {HeaderComponent} from "../components/header/header.component";
     styleUrls: ['./projects.component.scss'],
   imports: [
     MatCardModule,
-    HeaderComponent
+    HeaderComponent,
+    MatGridListModule,
+    CardsComponent,
+    FooterComponent
   ],
     standalone: true
 })

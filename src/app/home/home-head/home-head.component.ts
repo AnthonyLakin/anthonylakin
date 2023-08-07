@@ -12,16 +12,11 @@ import {MatGridListModule} from "@angular/material/grid-list";
   styleUrls: ['./home-head.component.scss']
 })
 
-export class HomeHeadComponent implements AfterViewInit{
+export class HomeHeadComponent {
 
   @ViewChild("topLayer") topLayer!: ElementRef;
   @ViewChild("midLayer") midLayer!: ElementRef;
   @ViewChild("backLayer") backLayer!: ElementRef;
-  constructor(private elementRef: ElementRef) {
-  }
-  ngAfterViewInit() {
-    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = 'black'
-  }
 
 
   @HostListener("document:scroll") scrollHandler() {

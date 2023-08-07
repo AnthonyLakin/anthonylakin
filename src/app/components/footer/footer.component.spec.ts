@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Text2Component } from './text2.component';
+import { FooterComponent } from './footer.component';
 
-describe('Text2Component', () => {
-  let component: Text2Component;
-  let fixture: ComponentFixture<Text2Component>;
+describe('FooterComponent', () => {
+  let component: FooterComponent;
+  let fixture: ComponentFixture<FooterComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [Text2Component]
+      imports: [FooterComponent]
     });
-    fixture = TestBed.createComponent(Text2Component);
+    fixture = TestBed.createComponent(FooterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
