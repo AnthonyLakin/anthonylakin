@@ -5,6 +5,7 @@ import {MatListModule} from "@angular/material/list";
 import {HomeBody2Component} from "./home-body2/home-body2.component";
 import {FooterComponent} from "../components/footer/footer.component";
 import {ProjectsWrapperComponent} from "./projects-wrapper/projects-wrapper.component";
+import {NavbarComponent} from "../components/navbar/navbar.component";
 
 
 @Component({
@@ -18,7 +19,8 @@ import {ProjectsWrapperComponent} from "./projects-wrapper/projects-wrapper.comp
     MatListModule,
     HomeBody2Component,
     FooterComponent,
-    ProjectsWrapperComponent
+    ProjectsWrapperComponent,
+    NavbarComponent
   ]
 })
 export class HomeComponent implements AfterViewInit{

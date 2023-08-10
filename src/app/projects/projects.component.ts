@@ -4,6 +4,7 @@ import {HeaderComponent} from "../components/header/header.component";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {CardsComponent} from "./cards/cards.component";
 import {FooterComponent} from "../components/footer/footer.component";
+import {NavbarComponent} from "../components/navbar/navbar.component";
 
 @Component({
     selector: 'app-projects',
@@ -14,7 +15,8 @@ import {FooterComponent} from "../components/footer/footer.component";
     HeaderComponent,
     MatGridListModule,
     CardsComponent,
-    FooterComponent
+    FooterComponent,
+    NavbarComponent
   ],
     standalone: true
 })

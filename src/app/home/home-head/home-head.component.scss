@@ -6,14 +6,16 @@ img {
   object-fit: cover;
 }
 
+
 .backgroundImg {
-  background: black url("../../../assets/img/home/space_mountain.png");
+  background: black url("../../../assets/img/home/mountain5.png");
   background-size: 100% auto;
-  background-position: center;
   width: 100%;
-  height: 100%;
+  height: 200%;
   position: absolute;
+  z-index: -2;
   left: 0;
+  top: 0;
 }
 
 mat-grid-list {
