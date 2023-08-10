@@ -1,19 +1,18 @@
 body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  /*background-color: var(--black);*/
   margin: 0;
 }
 
-h1 {
-  font-size: 4em;
-}
+/*h1 {*/
+/*  font-size: 4em;*/
+/*}*/
 
-h3 {
-  font-size: 2em;
-}
+/*h3 {*/
+/*  font-size: 2em;*/
+/*}*/
 
 .margins {
-  margin: 0 10%;
+  margin: 0 15%;
 }
 
 .margins * {
