@@ -9,30 +9,29 @@ img {
 
 .backgroundImg {
   background: black url("../../../assets/img/home/mountain5.png");
+  filter: brightness(.6);
   background-size: 100% auto;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 200%;
+  height: 300%;
   position: absolute;
   z-index: -2;
   left: 0;
   top: 0;
 }
 
-mat-grid-list {
-  top: 10vh;
-}
-
 mat-grid-tile {
-//border: solid 1px white;
+  //border: solid 1px white;
 }
 
 mat-grid-list {
-  height: 60em;
+  height: 100vh;
+  margin-top: 6em;
+  writing-mode: bt-rl;
 }
 
 .gridCell div {
   bottom: 0;
-  margin-right: 5em;
 }
 
 
@@ -43,7 +42,6 @@ mat-grid-list {
 
 .imgContainer {
   margin: 0 1em;
-  background-color: red;
   display: inline;
 }
 
@@ -52,60 +50,49 @@ mat-grid-list {
   width: 100%;
   height: 50%;
   top: 15%;
-  background-color: #003a5e;
+  background-color: #ffffff;
   //border: solid 1px white;
-  opacity: .6;
+  opacity: .1;
 }
 
-.line {
-  height: 80%;
-  position: absolute;
-  left: 20%;
-  width: 2em;
-}
-
-.arrowDown {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 1em 1em 0;
-  border-color: white transparent transparent transparent;
-}
-
-
-.dotPath {
-  position: relative;
-  height: 100%;
-  width: calc(50% - 1.5px);
-}
-
-.dotPath>span {
-  height: 50px;
-  width: 50px;
-}
-
-.dotPath>.dots {
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 2px;
-  height: calc(100% - 1em);
-  background-image: linear-gradient(to top, white 50%, transparent 0%);
-  background-size: 4px 30px;
-  background-repeat: repeat-y;
-  background-position: 0 top;
-  animation-name: dots-line;
-  animation-duration: 30s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes dots-line {
-  from {
-    background-position: 100% top;
-  }
-  to {
-    background-position: 0 bottom;
+.linePath {
+  height: 90%;
+  .line {
+    height: 90%;
   }
 }
+
+
+/* Phone */
+@media screen and (max-width: 700px) {
+  mat-grid-list {
+    margin: 0;
+  }
+
+  mat-grid-tile:last-child {
+    display: none;
+  }
+
+  mat-grid-tile:first-child {
+    //order: 2;
+  }
+
+  .gridCell {
+    text-align: center;
+    padding: 0 1em;
+    width: auto;
+    height: auto;
+  }
+
+  .gridCell div {
+    position: relative;
+  }
+
+}
+
+
+
+
+
+
+

@@ -3,13 +3,26 @@ body {
   margin: 0;
 }
 
-/*h1 {*/
-/*  font-size: 4em;*/
-/*}*/
+h1 {
+  font-size: 4vw;
+  margin-bottom: .1em;
+}
 
-/*h3 {*/
-/*  font-size: 2em;*/
-/*}*/
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+.subhead {
+  font-size: 1.5vw;
+}
 
 .margins {
   margin: 0 15%;
@@ -19,6 +32,7 @@ body {
   display: block;
 }
 
+/* Home Page Styling */
 .gridCell {
   width: 100%;
   height: 100%;
@@ -26,6 +40,52 @@ body {
 
 .gridCell div {
   position: absolute;
+}
+
+.linePath {
+  display: flex;
+  flex-direction: column;
+  left: 5em;
+  width: 2em;
+}
+
+.arrowDown {
+  width: 0;
+  height: 0;
+  top: 0;
+  border-style: solid;
+  border-width: 1em 1em 0;
+  border-color: var(--accentDark) transparent transparent transparent;
+}
+
+.line {
+  width: var(--lineWidth);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: var(--accentDark);
+}
+
+/* End of Home Page Styling */
+
+
+/* Tablet */
+@media screen and (max-width: 1000px) {
+  .margins {
+    margin: 0 5em;
+  }
+}
+
+/* Phone */
+@media screen and (max-width: 700px) {
+  .margins {
+    margin: 0 4em;
+  }
+
+  .linePath, .art1 {
+    display: none;
+  }
 }
 
 

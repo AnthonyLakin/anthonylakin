@@ -1,7 +1,7 @@
 
 * {
-  display: block;
-
+  display: flex;
+  flex-direction: column;
 }
 
 app-projects-wrapper {
@@ -12,5 +12,17 @@ app-projects-wrapper {
 app-home-body2 {
   background-color: var(--black);
 }
+
+app-home-head {
+}
+
+app-home-body1 {
+  //background-color: #00000080;
+}
+
+app-home-head {
+  margin: 5em 0;
+}
+
 
 

@@ -1,11 +1,11 @@
-<div class="imgWrapper"  (scroll)="scrollHandler()">
+<div class="imgWrapper" (scroll)="scrollHandler()">
   <div #backLayer class="backgroundImg"></div>
-  <mat-grid-list cols="2" rowHeight="fit">
+  <mat-grid-list cols="{{columnNum}}" rowHeight="fit">
     <mat-grid-tile [colspan]="1.25" [rowspan]="2" class="text">
       <div class="gridCell">
         <div>
           <h1>Well, hello there</h1>
-        <p>Let me guess you were just randomly surfing the web, happened to Google “handsome young man who develops websites” tried a few links, and landed here? </p>
+        <p class="subhead">Let me guess you were just randomly surfing the web, happened to Google “handsome young man who develops websites” tried a few links, and landed here? </p>
         </div>
       </div>
     </mat-grid-tile>
@@ -16,12 +16,11 @@
     </mat-grid-tile>
 
     <mat-grid-tile [rowspan]="4">
-      <div class="line">
+      <div class="gridCell">
+      <div class="linePath">
         <div class="arrowDown"></div>
-        <div class="dotPath">
-          <span class="dots"></span>
-        </div>
-      </div>
+        <div class="line"></div>
+      </div></div>
 
     </mat-grid-tile>
   </mat-grid-list>

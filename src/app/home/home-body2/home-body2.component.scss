@@ -32,57 +32,23 @@ img {
   object-fit: contain;
 }
 
-.line {
-  height: 90%;
-  top: 0;
-  position: absolute;
-  left: 20%;
-  width: 2em;
-}
-
-.dotPath {
-  position: relative;
-  height: 100%;
-  width: calc(50% - 1.5px);
-}
-
-.dotPath>span {
-  height: 50px;
-  width: 50px;
-}
-
-.dotPath>.dots {
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 2px;
-  height: calc(100% - 1em);
-  background-image: linear-gradient(to top, white 50%, transparent 0%);
-  background-size: 4px 30px;
-  background-repeat: repeat-y;
-  background-position: 0 top;
-  animation-name: dots-line;
-  animation-duration: 30s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes dots-line {
-  from {
-    background-position: 100% top;
-  }
-  to {
-    background-position: 0 bottom;
-  }
-}
-
-.line + div {
+.line2 {
   height: 50%;
-  width: .15em;
-  background-color: var(--white);
+  width: .2em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto auto auto 12em;
+  background-color: var(--accentDark);
 }
 
 .gridCell div {
   text-align: right;
+}
+
+.linePath {
+  height: 100%;
+  .line {
+    height: 100%;
+  }
 }

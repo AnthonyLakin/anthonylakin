@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, ElementRef, HostListener, ViewChild} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, HostListener, Input, ViewChild} from '@angular/core';
 import {CommonModule, NgOptimizedImage} from '@angular/common';
 import {MatGridListModule} from "@angular/material/grid-list";
 
@@ -12,12 +12,11 @@ import {MatGridListModule} from "@angular/material/grid-list";
   styleUrls: ['./home-head.component.scss']
 })
 
-export class HomeHeadComponent {
+export class HomeHeadComponent implements AfterViewInit{
 
   @ViewChild("topLayer") topLayer!: ElementRef;
   @ViewChild("midLayer") midLayer!: ElementRef;
   @ViewChild("backLayer") backLayer!: ElementRef;
-
 
   @HostListener("document:scroll") scrollHandler() {
     let scrollY = document.documentElement.scrollTop;
@@ -33,6 +32,40 @@ export class HomeHeadComponent {
     //   this.midLayer.nativeElement.style.setProperty('opacity', 1.3- (scrollY/scrollHeight));
     // }
 
+  }
+
+  @Input() columnNum: any;
+  // @Input() colSpan1: any
+  // @Input() colSpan2: any;
+
+ small() {
+   this.columnNum = 1;
+   // this.colSpan1 = 1;
+   // this.colSpan2 = 1;
+  }
+
+  regular() {
+    this.columnNum = 2;
+    // this.colSpan1 = 1.25;
+    // this.colSpan2 = .75;
+  }
+
+  ngAfterViewInit() {
+    if (window.innerWidth <= 700) {
+      this.small();
+    } else {
+      this.regular();
+
+    }
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: { target: { innerWidth: any; }; }) {
+    if (event.target.innerWidth <= 700) {
+      this.small();
+    } else {
+      this.regular();
+    }
   }
 
 }

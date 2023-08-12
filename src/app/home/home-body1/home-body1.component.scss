@@ -23,7 +23,7 @@ mat-grid-list {
 
 .art1 {
   height: 50%;
-  width: 50%;
+  width: 75%;
   position: absolute;
   top: 0;
   right: 0;
@@ -43,50 +43,13 @@ mat-grid-list {
   margin-left: 50%;
 }
 
-.line {
+.linePath {
   height: 90%;
-  top: 0;
-  position: absolute;
-  left: 20%;
-  width: 2em;
-}
-
-.dotPath {
-  position: relative;
-  height: 100%;
-  width: calc(50% - 1.5px);
-}
-
-.dotPath>span {
-  height: 50px;
-  width: 50px;
-}
-
-.dotPath>.dots {
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 2px;
-  height: calc(100% - 1em);
-  background-image: linear-gradient(to top, white 50%, transparent 0%);
-  background-size: 4px 30px;
-  background-repeat: repeat-y;
-  background-position: 0 top;
-  animation-name: dots-line;
-  animation-duration: 30s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes dots-line {
-  from {
-    background-position: 100% top;
-  }
-  to {
-    background-position: 0 bottom;
+  .line {
+    height: 100%;
   }
 }
+
 
 
 
