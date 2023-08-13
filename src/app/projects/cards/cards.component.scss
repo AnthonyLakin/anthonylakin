@@ -1,10 +1,11 @@
+mat-grid-list {
+}
+
 mat-grid-tile {
-  overflow: visible;
-  margin: 7em 0;
 }
 
 mat-card {
-  width: 100%;
+  width: 20em;
   height: 100%;
   padding: 0;
 }
@@ -34,4 +35,8 @@ img {
   height: 100%;
   width: auto;
   //object-fit: contain;
+}
+
+.margins {
+  background-color: red;
 }

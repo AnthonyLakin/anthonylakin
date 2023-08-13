@@ -1,11 +1,7 @@
-:host(footer) {
-  --footerPrimary: #7D7D7D;
-  --footerBG: #E7E7E7
-}
+
 
 footer {
   width: 100%;
-  background-color: var(--footerBG);
   height: 15em;
   display: flex;
 }

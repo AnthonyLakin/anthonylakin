@@ -1,5 +1,6 @@
+<div class="margins">
 <div class="imgWrapper" (scroll)="scrollHandler()">
-  <div #backLayer class="backgroundImg"></div>
+  <div #backLayer class="backgroundImg parallax"></div>
   <mat-grid-list cols="{{columnNum}}" rowHeight="fit">
     <mat-grid-tile [colspan]="1.25" [rowspan]="2" class="text">
       <div class="gridCell">
@@ -10,9 +11,9 @@
       </div>
     </mat-grid-tile>
     <mat-grid-tile [colspan]=".75" [rowspan]="6">
-      <div class="imgSquare" #midLayer></div>
+      <div class="imgSquare parallax" #midLayer></div>
       <div class="imgContainer">
-        <img #topLayer class="cutOut" ngSrc="../../../assets/img/home/anthonyCutOut2.png" alt="anthony" fill></div>
+        <img #topLayer class="cutOut parallax" ngSrc="../../../assets/img/home/anthonyCutOut2.png" alt="anthony" priority fill></div>
     </mat-grid-tile>
 
     <mat-grid-tile [rowspan]="4">
@@ -25,4 +26,5 @@
     </mat-grid-tile>
   </mat-grid-list>
 
+</div>
 </div>

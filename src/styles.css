@@ -3,26 +3,26 @@ body {
   margin: 0;
 }
 
-h1 {
-  font-size: 4vw;
-  margin-bottom: .1em;
-}
+/*h1 {*/
+/*  font-size: 4vw;*/
+/*  margin-bottom: .1em;*/
+/*}*/
 
-h2 {
-  font-size: 2.5em;
-}
+/*h2 {*/
+/*  font-size: 2.5em;*/
+/*}*/
 
-h3 {
-  font-size: 2em;
-}
+/*h3 {*/
+/*  font-size: 2em;*/
+/*}*/
 
-p {
-  font-size: 1.5em;
-}
+/*p {*/
+/*  font-size: 1.5em;*/
+/*}*/
 
-.subhead {
-  font-size: 1.5vw;
-}
+/*.subhead {*/
+/*  font-size: 1.5vw;*/
+/*}*/
 
 .margins {
   margin: 0 15%;

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {AfterViewInit, Component, HostListener, Input} from '@angular/core';
 import {CommonModule, NgOptimizedImage} from '@angular/common';
 import {MatListModule} from "@angular/material/list";
 import {MatGridListModule} from "@angular/material/grid-list";
@@ -11,5 +11,7 @@ import {MatGridListModule} from "@angular/material/grid-list";
   styleUrls: ['./home-body2.component.scss']
 })
 export class HomeBody2Component {
+
+
 
 }

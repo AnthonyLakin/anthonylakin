@@ -6,6 +6,10 @@ img {
   object-fit: cover;
 }
 
+.parallax {
+  transition: transform .2s ease-out;
+}
+
 
 .backgroundImg {
   background: black url("../../../assets/img/home/mountain5.png");

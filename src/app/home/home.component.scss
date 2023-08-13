@@ -2,27 +2,28 @@
 * {
   display: flex;
   flex-direction: column;
+  padding: 5em 0;
+}
+
+app-navbar {
+  padding: 0 !important;
 }
 
 app-projects-wrapper {
   background-color: #E4E4E4;
-  padding: 5em 0;
 }
 
 app-home-body2 {
   background-color: var(--black);
 }
 
-app-home-head {
+app-footer {
+  background-color: var(--footerBG);
 }
 
-app-home-body1 {
-  //background-color: #00000080;
-}
 
-app-home-head {
-  margin: 5em 0;
-}
+
+
 
 
 

@@ -1,4 +1,13 @@
-import {AfterViewInit, Component, ElementRef} from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  HostListener,
+  Input,
+  QueryList,
+  ViewChildren,
+  ViewContainerRef
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatListModule} from "@angular/material/list";
@@ -12,11 +21,45 @@ import {MatListModule} from "@angular/material/list";
 })
 export class HomeBody1Component implements AfterViewInit{
 
-  constructor(private elementRef: ElementRef) {
+  @ViewChildren("mat-grid-tile") gridTile!: QueryList<ViewContainerRef>
+  @Input() columnNum: any;
+  // @Input() colSpan1: any
+  // @Input() colSpan2: any;
+
+  small() {
+    this.columnNum = 1;
+    // this.colSpan1 = 1;
+    // this.colSpan2 = 1;
+    // console.log(this.columnNum);
+  }
+
+  regular() {
+    this.columnNum = 3;
+    // this.colSpan1 = 1.25;
+    // this.colSpan2 = .75;
+    // console.log(this.columnNum);
   }
 
   ngAfterViewInit() {
-    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = 'black'
+    console.log(this.gridTile.length)
+    // if (window.innerWidth <= 700) {
+    //   this.small();
+    // } else {
+    //   this.regular();
+    //
+    // }
   }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: { target: { innerWidth: any; }; }) {
+    // if (event.target.innerWidth <= 700) {
+    //   this.small();
+    // } else {
+    //   this.regular();
+    // }
+  }
+
+
+
 
 }
