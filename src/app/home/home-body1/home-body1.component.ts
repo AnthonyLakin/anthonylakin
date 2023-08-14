@@ -21,42 +21,47 @@ import {MatListModule} from "@angular/material/list";
 })
 export class HomeBody1Component implements AfterViewInit{
 
-  @ViewChildren("mat-grid-tile") gridTile!: QueryList<ViewContainerRef>
+  constructor(
+    private elRef:ElementRef
+  ) {}
+
   @Input() columnNum: any;
-  // @Input() colSpan1: any
-  // @Input() colSpan2: any;
+  @Input() colSpan1: any
+  @Input() colSpan2: any;
+  @Input() colSpan3: any;
+
 
   small() {
     this.columnNum = 1;
-    // this.colSpan1 = 1;
-    // this.colSpan2 = 1;
-    // console.log(this.columnNum);
+    this.colSpan1 = 1;
+    this.colSpan2 = 0;
+    this.colSpan3 = 1;
   }
 
   regular() {
     this.columnNum = 3;
-    // this.colSpan1 = 1.25;
-    // this.colSpan2 = .75;
-    // console.log(this.columnNum);
+    this.colSpan1 = 2;
+    this.colSpan2 = 3;
+    this.colSpan3 = 3;
   }
 
   ngAfterViewInit() {
-    console.log(this.gridTile.length)
-    // if (window.innerWidth <= 700) {
-    //   this.small();
-    // } else {
-    //   this.regular();
-    //
-    // }
+
+    if (window.innerWidth <= 700) {
+      this.small();
+    } else {
+      this.regular();
+
+    }
   }
 
   @HostListener('window:resize', ['$event'])
   onResize(event: { target: { innerWidth: any; }; }) {
-    // if (event.target.innerWidth <= 700) {
-    //   this.small();
-    // } else {
-    //   this.regular();
-    // }
+    if (event.target.innerWidth <= 700) {
+      this.small();
+    } else {
+      this.regular();
+    }
   }
 
 

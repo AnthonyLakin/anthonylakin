@@ -1,6 +1,6 @@
 <div class="margins">
-<mat-grid-list cols="3" rowHeight="fit">
-  <mat-grid-tile [colspan]="2" [rowspan]="1" class="text">
+<mat-grid-list cols="{{columnNum}}" rowHeight="fit">
+  <mat-grid-tile [colspan]="colSpan1" [rowspan]="1" class="text"><!--2-->
     <div class="gridCell">
     <div>
       <h2>Haha</h2>
@@ -14,14 +14,14 @@
       <div></div>
     </div>
   </mat-grid-tile>
-  <mat-grid-tile [colspan]="3" [rowspan]="2">
+  <mat-grid-tile [colspan]="colSpan2" [rowspan]="2"><!--3-->
     <div class="gridCell">
       <div class="linePath">
         <div class="line"></div>
       </div>
     </div>
   </mat-grid-tile>
-  <mat-grid-tile [colspan]="3">
+  <mat-grid-tile [colspan]="colSpan3"><!--3-->
     <div class="gridCell">
     <div>
       <h2>What I do</h2>

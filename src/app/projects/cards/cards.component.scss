@@ -12,8 +12,18 @@ mat-card {
 
 .topCard {
   width: 100%;
+  background-color: #4f4f4f;
   height: 70%;
   top: 0;
+}
+
+img {
+  height: 100%;
+  width: auto;
+  background-size: 100% auto;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: none;
 }
 
 .bottomCard {
@@ -30,13 +40,3 @@ mat-card-subtitle {
   margin: .3em 1em;
 }
 
-
-img {
-  height: 100%;
-  width: auto;
-  //object-fit: contain;
-}
-
-.margins {
-  background-color: red;
-}

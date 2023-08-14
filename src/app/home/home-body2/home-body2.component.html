@@ -19,8 +19,8 @@
 
 </div>
 
-<mat-grid-list cols="3" rowHeight="fit">
-  <mat-grid-tile [colspan]="1">
+<mat-grid-list cols="{{columnNum}}" rowHeight="fit">
+  <mat-grid-tile [colspan]="colSpan1"><!--1-->
     <div class="gridCell">
       <div class="linePath">
         <div class="line"></div>
@@ -28,7 +28,7 @@
       <div class="line2"></div>
     </div>
   </mat-grid-tile>
-  <mat-grid-tile [colspan]="2">
+  <mat-grid-tile [colspan]="colSpan2"><!--2-->
       <div>
         <h2>Where can I learn more?</h2>
         <p>That is a great question you’ve asked. I know just the right place. Let's travel next door to the about me page to deep dive into what, where, when, and who Anthony Lakin is.</p>

@@ -4,7 +4,7 @@
 
 
 mat-grid-tile {
-  border: solid 1px white;
+  //border: solid 1px white;
 }
 
 mat-grid-list {
@@ -21,7 +21,7 @@ mat-grid-list {
   div {
     height: .1em;
     display: block;
-    background-color: var(--white);
+    background-color: var(--accentDark);
     margin-bottom: 4em;
   }
 }
@@ -39,6 +39,8 @@ mat-grid-list {
     height: 100%;
   }
 }
+
+
 
 
 

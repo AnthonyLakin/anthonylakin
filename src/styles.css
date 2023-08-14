@@ -26,6 +26,7 @@ body {
 
 .margins {
   margin: 0 15%;
+  /*border: dashed 1px red;*/
 }
 
 .margins * {
@@ -73,19 +74,35 @@ body {
 /* Tablet */
 @media screen and (max-width: 1000px) {
   .margins {
-    margin: 0 5em;
+    margin: 0 7%;
   }
 }
 
 /* Phone */
 @media screen and (max-width: 700px) {
   .margins {
-    margin: 0 4em;
+    margin: 0 5%;
   }
 
   .linePath, .art1 {
     display: none;
   }
+
+  mat-grid-tile {
+    text-align: center;
+  }
+
+  .gridCell {
+    text-align: center;
+    padding: 0 1em;
+    width: auto;
+    height: auto;
+  }
+
+  .gridCell div {
+    position: relative;
+  }
+
 }
 
 

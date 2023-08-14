@@ -73,24 +73,14 @@ mat-grid-list {
     margin: 0;
   }
 
+  .backgroundImg {
+    background-size: 175% auto;
+  }
+
   mat-grid-tile:last-child {
     display: none;
   }
 
-  mat-grid-tile:first-child {
-    //order: 2;
-  }
-
-  .gridCell {
-    text-align: center;
-    padding: 0 1em;
-    width: auto;
-    height: auto;
-  }
-
-  .gridCell div {
-    position: relative;
-  }
 
 }
 

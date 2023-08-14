@@ -7,7 +7,9 @@ footer {
 }
 
 .container {
-  width: 25%;
+  width: 40%;
+  //min-width: 80vw;
+  //border: dashed 1px blue;
   top: 0;
   bottom: 0;
   left: 0;
@@ -15,7 +17,7 @@ footer {
   margin: auto;
   text-align: center;
   * {
-    margin: .5em 0;
+    margin: .8em 0;
     color: var(--footerPrimary);
   }
   span {
@@ -32,6 +34,16 @@ img {
   width: 1.5em;
   height: auto;
 }
+
+
+/* Tablet */
+@media screen and (max-width: 1000px) {
+  .container {
+    min-width: 80vw;
+  }
+
+}
+
 
 
 
