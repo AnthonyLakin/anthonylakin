@@ -11,11 +11,12 @@ import {
 import { CommonModule } from '@angular/common';
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatListModule} from "@angular/material/list";
+import {BarsComponent} from "../../components/bars/bars.component";
 
 @Component({
   selector: 'app-home-body1',
   standalone: true,
-  imports: [CommonModule, MatGridListModule, MatListModule],
+  imports: [CommonModule, MatGridListModule, MatListModule, BarsComponent],
   templateUrl: './home-body1.component.html',
   styleUrls: ['./home-body1.component.scss']
 })
@@ -29,6 +30,7 @@ export class HomeBody1Component implements AfterViewInit{
   @Input() colSpan1: any
   @Input() colSpan2: any;
   @Input() colSpan3: any;
+  @Input() colSpan4: any;
 
 
   small() {
@@ -36,6 +38,7 @@ export class HomeBody1Component implements AfterViewInit{
     this.colSpan1 = 1;
     this.colSpan2 = 0;
     this.colSpan3 = 1;
+    this.colSpan4 = 0;
   }
 
   regular() {
@@ -43,6 +46,7 @@ export class HomeBody1Component implements AfterViewInit{
     this.colSpan1 = 2;
     this.colSpan2 = 3;
     this.colSpan3 = 3;
+    this.colSpan4 = 1;
   }
 
   ngAfterViewInit() {

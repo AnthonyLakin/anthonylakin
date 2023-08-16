@@ -74,12 +74,12 @@ mat-grid-list {
   }
 
   .backgroundImg {
-    background-size: 175% auto;
+    background-size: 200% auto;
   }
 
-  mat-grid-tile:last-child {
-    display: none;
-  }
+  //mat-grid-tile:last-child {
+  //  display: none;
+  //}
 
 
 }

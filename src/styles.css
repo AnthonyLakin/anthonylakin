@@ -88,9 +88,9 @@ body {
     display: none;
   }
 
-  mat-grid-tile {
+  /*mat-grid-tile {
     text-align: center;
-  }
+  }*/
 
   .gridCell {
     text-align: center;

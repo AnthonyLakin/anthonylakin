@@ -6,6 +6,7 @@ import {HomeBody2Component} from "./home-body2/home-body2.component";
 import {FooterComponent} from "../components/footer/footer.component";
 import {ProjectsWrapperComponent} from "./projects-wrapper/projects-wrapper.component";
 import {NavbarComponent} from "../components/navbar/navbar.component";
+import {BarsComponent} from "../components/bars/bars.component";
 
 
 @Component({
@@ -13,15 +14,16 @@ import {NavbarComponent} from "../components/navbar/navbar.component";
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
   standalone: true,
-  imports: [
-    HomeHeadComponent,
-    HomeBody1Component,
-    MatListModule,
-    HomeBody2Component,
-    FooterComponent,
-    ProjectsWrapperComponent,
-    NavbarComponent
-  ]
+    imports: [
+        HomeHeadComponent,
+        HomeBody1Component,
+        MatListModule,
+        HomeBody2Component,
+        FooterComponent,
+        ProjectsWrapperComponent,
+        NavbarComponent,
+        BarsComponent
+    ]
 })
 export class HomeComponent implements AfterViewInit{
 

@@ -67,20 +67,27 @@ img {
   .wrapper {
     flex-direction: column;
     div {
-      margin: 5em;
+      margin: 6em;
+      * {
+        text-align: center;
+      }
     }
   }
 
-
-  .gridCell {
+  mat-grid-tile {
     text-align: center;
-    padding: 0 1em;
-    width: auto;
-    height: auto;
   }
 
-  .gridCell div {
-    position: relative;
-  }
+
+.gridCell {
+  text-align: center;
+  padding: 0 1em;
+  width: auto;
+  height: auto;
+}
+
+.gridCell div {
+  position: relative;
+}
 
 }

@@ -1,13 +1,14 @@
 import {AfterViewInit, Component, ElementRef, HostListener, Input, ViewChild} from '@angular/core';
 import {CommonModule, NgOptimizedImage} from '@angular/common';
 import {MatGridListModule} from "@angular/material/grid-list";
+import {BarsComponent} from "../../components/bars/bars.component";
 
 
 
 @Component({
   selector: 'app-home-head',
   standalone: true,
-  imports: [CommonModule, NgOptimizedImage, MatGridListModule],
+    imports: [CommonModule, NgOptimizedImage, MatGridListModule, BarsComponent],
   templateUrl: './home-head.component.html',
   styleUrls: ['./home-head.component.scss']
 })
@@ -35,18 +36,18 @@ export class HomeHeadComponent implements AfterViewInit{
   }
 
   @Input() columnNum: any;
-  // @Input() colSpan1: any
+  @Input() colSpan1: any
   // @Input() colSpan2: any;
 
  small() {
    this.columnNum = 1;
-   // this.colSpan1 = 1;
+   this.colSpan1 = 0;
    // this.colSpan2 = 1;
   }
 
   regular() {
     this.columnNum = 2;
-    // this.colSpan1 = 1.25;
+    this.colSpan1 = 1.25;
     // this.colSpan2 = .75;
   }
 

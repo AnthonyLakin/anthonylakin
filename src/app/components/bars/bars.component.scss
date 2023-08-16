@@ -1,0 +1,25 @@
+.headBars {
+  width: 10vw;
+  display: flex;
+  left: 0;
+  transform: translateY(-50%);
+  right: 0;
+  margin: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 2em;
+  div {
+    width: 100%;
+    height: 20%;
+  }
+}
+
+.headBars div:nth-child(1) {
+  background-color: var(--bgColor);
+  top: 0;
+}
+
+.headBars div:nth-child(2) {
+  background-color: var(--primaryLight);
+  bottom: 0;
+}
