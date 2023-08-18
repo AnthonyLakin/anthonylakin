@@ -11,8 +11,39 @@ mat-grid-tile {
 img {
   width: auto;
   height: 100%;
-  object-fit: cover;
+  top: 0;
+  object-fit: contain;
 
+}
+
+.bg {
+  background-color: #042E66;
+  img {
+    display: inline;
+    position: absolute;
+    width: auto;
+    height: 100%;
+    filter: brightness(.3);
+  }
+  div {
+    background-color: var(--white);
+    text-align: center;
+    padding: 0 2em;
+    margin: 15vw;
+    z-index: 2;
+    * {
+      margin: 7em 0;
+    }
+    div {
+      height: .1em;
+      width: 40%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background-color: var(--black);
+      box-shadow: var(--cardBoxShadow);
+    }
+  }
 }
 
 

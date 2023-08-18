@@ -25,7 +25,8 @@ mat-grid-tile {
   justify-content: space-between;
   div {
     //border: solid 1px white;
-    margin: 1em;
+    width: 25%;
+    word-wrap: break-word;
     display: block;
   }
 }
@@ -66,10 +67,14 @@ img {
 @media screen and (max-width: 700px) {
   .wrapper {
     flex-direction: column;
+    //background-color: red;
+    padding: 15vw;
     div {
-      margin: 6em;
+      margin: 2em 0;
+      width: 100%;
       * {
         text-align: center;
+
       }
     }
   }

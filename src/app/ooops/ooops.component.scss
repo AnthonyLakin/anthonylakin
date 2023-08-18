@@ -1,0 +1,21 @@
+.margins {
+  div {
+    color: var(--white);
+    text-align: center;
+    //background-color: red;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    * {
+      margin: .5em 0;
+    }
+    mat-button-toggle {
+      margin-top: 3em;
+    }
+  }
+}
