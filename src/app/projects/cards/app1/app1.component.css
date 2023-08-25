@@ -1,0 +1,627 @@
+/* Anthony Lakin, 7-24-20 */
+
+html {
+  /* color variables */
+  --white: #fff;
+  --light-blue: #57B2FF;
+  --black: #00000050;
+  --dark-blue: #0D92FF;
+  --dark-grey: #BEBEBE;
+  --light-grey: #888888;
+  --darker-grey: #595959;
+  --lighter-blue: #59B4FF;
+  --curve: .2em;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #e8e8e8;
+  font-family: Arial, serif, 'Times New Roman', Times;
+}
+
+
+/* The Modal Box */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: white;
+  color: var(--light-grey);
+  font-size: .5em;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 1em 2em;
+  border-radius: .5em;
+  width: 40%;
+}
+
+.modal-content > h1 {
+  margin: 3em 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.newImg {
+  margin: 1em;
+  left: 0;
+  right: 0;
+  margin: 1em auto;
+}
+
+/* The Close Button */
+.close {
+  color: var(--light-blue);
+  float: right;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #7d0011;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+.wrapper {
+  width: 80%;
+  position: absolute;
+  height: 100%;
+  margin: auto;
+  overflow: scroll;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+header {
+  background-color: var(--light-blue);
+  padding: .5em;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  font-size: 2em;
+  z-index: 2;
+  color: var(--white);
+  margin: .5em 0 1em;
+  box-shadow: 0 .09em .09em 0 var(--black);
+}
+
+
+/* Navigation Bar */
+.site-nav {
+  display: flex;
+  padding: 0.1em;
+  background-color: #0D92FF00;
+  list-style-type: none;
+  border-radius: .1em;
+  transition: all 1s;
+}
+
+.site-nav:hover {
+  background-color: var(--dark-blue);
+}
+
+.site-nav > li {
+  margin-top: 0;
+}
+
+.site-nav > li > a {
+  display: block;
+  padding: .5em .5em;
+  font-size: .5em;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: var(--lighter-blue);
+}
+
+.site-nav > li + li {
+  margin-left: .5em;
+}
+
+.site-nav > .nav-right {
+  margin-left: auto;
+
+}
+
+.nav-right > a {
+  color: white;
+}
+
+.nav-right > a:hover {
+  background-color: white;
+  color: var(--dark-blue);
+}
+
+main {
+  padding: 1em;
+  display: block;
+  background-color: var(--white);
+  box-shadow: 0 .05em .05em 0 var(--black);
+  text-align: center;
+}
+
+.item {
+  width: 95%;
+  padding: 1em 0;
+  display: table;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+}
+
+.item > div {
+  display: table-cell;
+}
+
+.title {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
+
+.top {
+  margin-top: 0;
+}
+
+
+
+.right,
+.left,
+.middle {
+  width: 25em;
+  border-radius: 0;
+  display: block;
+  border: solid 1px var(--dark-blue);
+  margin: auto 1em;
+  background-color: var(--white);
+}
+
+
+
+form,
+.output {
+  display: block;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: 2em;
+}
+
+.output {
+  text-align: left;
+  color: var(--darker-grey);
+}
+
+.form1 {
+  text-align: center;
+}
+
+.form1 > * {
+  display: block;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.form1 > input {
+  margin-bottom: 1em;
+}
+
+input {
+  width: 100%;
+  border: solid 1px var(--dark-grey);
+  font-size: 1em;
+  margin: 1em 0;
+  color: var(--light-grey);
+}
+
+input:focus {
+  outline: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: solid 2px var(--light-blue);
+}
+
+label {
+  font-size: .7em;
+  font-weight: bolder;
+  color: var(--dark-blue);
+  text-align: left;
+}
+
+button {
+  background-color: var(--light-blue);
+  border: none;
+  color: white;
+  width: 20%;
+  height: 2em;
+  border-radius: var(--curve);
+}
+
+.adj,
+.noun,
+.verb {
+  color: var(--light-blue);
+}
+
+.checkSee {
+  text-align: center;
+  display: block;
+}
+
+
+
+.span2 {
+  font-size: 2em;
+  text-align: center;
+  display: block;
+  color: var(--light-blue);
+}
+
+#guessPi {
+  text-align: center;
+}
+
+.middle {
+  width: 90%;
+}
+
+
+.comp {
+  padding: 1em;
+  margin: 1em;
+}
+
+.numbers,
+select {
+  padding: .5em;
+  font-size: 1.9em;
+  border-radius: var(--curve);
+  margin-bottom: 2em;
+}
+
+.numbers {
+  border: solid 1px var(--dark-blue);
+}
+
+select {
+  background-color: var(--dark-grey);
+  border: none;
+  color: white;
+}
+
+.comp > * {
+  display: inline;
+  margin: 1em;
+}
+
+.comp > button {
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+button {
+  display: block;
+  width: 5em;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+
+
+.boxy {
+  margin: 0 1em;
+}
+
+.boxy > * {
+  display: block;
+  text-align: center;
+}
+
+.box > input {
+  text-align: center;
+}
+
+main > div {
+  left: 0;
+  right: 0;
+  margin: 0 1em;
+  display: block;
+}
+
+
+.radio {
+  display: block;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: 1em;
+
+}
+
+.radio > label {
+  display: block;
+  padding: 0;
+
+}
+
+.mod {
+  width: 30%;
+}
+
+
+
+
+.modul {
+  width: 3em;
+}
+
+.math,
+.center {
+  display: block;
+  text-align: center;
+}
+
+#first,
+#second,
+.operand,
+.submit {
+  display: inline;
+  margin: .2em;
+  width: 2em;
+  font-size: 2em;
+  height: 2em;
+  text-align: center;
+}
+
+.submit {
+  margin: 1em;
+}
+
+/* Dark Mode */
+
+.darkMain {
+  /**/
+  background-color: #4D4D4D;
+}
+
+.darkBody {
+  /**/
+  background-color: #2A2A2A;
+}
+
+.darkItem {
+  /**/
+  background-color: #888888;
+  color: white;
+  border: solid 1px #BEBEBE;
+}
+
+.darkInput {
+  background-color: #646464;
+}
+
+.darkLabel,
+  /**/
+.darkSpan {
+  color: white;
+}
+
+.darkHeader,
+  /**/
+.title {
+  background-color: #0074D6;
+}
+
+/**/
+.darkNumbers {
+  background-color: #888888;
+  color: white;
+}
+
+
+
+
+
+/*
+
+
+Desktop first
+
+
+*/
+
+
+@media only screen and (max-width: 1000px) {
+
+  /* For small computers: */
+  .wrapper {
+    width: 100%;
+  }
+
+  header {
+    position: sticky;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  .item {
+    width: 100%;
+  }
+
+  .title,
+  .left,
+  .right,
+  .middle {
+    box-shadow: 0 .2em .1em 0 var(--black);
+    border: none;
+  }
+
+  main {
+    background-color: #e6e6e6;
+  }
+}
+
+
+
+
+
+
+/* For small screen only */
+@media only screen and (min-width: 900px) {
+
+  label {
+    white-space: nowrap;
+  }
+
+}
+
+
+
+
+
+
+
+/* For phone size */
+@media only screen and (max-width: 900px) {
+
+  .numbers,
+  select {
+    padding: .5em;
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+
+  .item {
+    display: block;
+
+
+  }
+
+  .item > div {
+    display: inline-block;
+    margin-top: 1em;
+    width: 90%;
+  }
+
+
+  .title {
+    margin: 5em 0 0 0;
+  }
+
+  .top {
+    margin: 0;
+  }
+
+  header {
+    padding: .1em;
+    font-size: 2em;
+    margin: 0;
+  }
+
+  .site-nav {
+    padding: 0;
+    background-color: var(--dark-blue);
+    margin: .1em .5em;
+  }
+
+
+  .site-nav > li > a {
+    display: block;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: .5em .5em;
+    font-size: .5em;
+  }
+
+
+  .site-nav > li + li {
+    margin-left: .5em;
+  }
+
+  .site-nav > .nav-right {
+    margin-left: .5em;
+    display: none;
+
+  }
+
+  #first,
+  #second,
+  .operand,
+  .submit {
+    margin: .2em;
+    width: 1.5em;
+    font-size: 1.5em;
+    height: 1.5em;
+    text-align: center;
+  }
+
+  .submit {
+    margin: 1em;
+  }
+
+  .output {
+    margin: .5em;
+  }
+
+
+  /* Modal Content */
+  .modal-content {
+    font-size: .5em;
+    padding: 2em;
+    width: 90%;
+  }
+
+  .modal-content > h1 {
+    margin: 2em;
+  }
+
+
+
+}

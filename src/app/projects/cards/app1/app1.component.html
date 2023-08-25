@@ -1,0 +1,123 @@
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="close">&times;</div>
+    <h1>Loading...</h1>
+<!--    <img src="img/img1.jpg" alt="Meme">-->
+    <button class="newImg">Next</button>
+  </div>
+
+</div>
+
+<div class="wrapper">
+  <header>
+    <nav>
+      <ul class="site-nav">
+        <li><a href="#">Word</a></li>
+        <li><a href="#">Greater</a></li>
+        <li><a href="#">Pie</a></li>
+        <li><a href="#">Average</a></li>
+        <li class="nav-right">
+          <a href="#"><b>Fun with JS</b></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="item title top" id="word">The Word Game</div>
+    <div class="item">
+      <div class="panel left">
+        <form class="form1"><label>Type a noun (Singular)</label><input type="text" id="inputNoun"><label>Type a verb (Past Tense)</label><input type="text" id="inputVerb"><label>Type an adjective</label><input type="text" id="inputAdj"><button id="bt1">Enter</button></form>
+      </div>
+      <div class="panel right">
+        <div class="output"><span class="span1"><b class="checkSee">Press enter to see results</b></span></div>
+      </div>
+    </div>
+    <div class="item title" id="comp">What's Greater?</div>
+    <div class="item">
+      <div class="panel middle">
+        <div class="comp form1">
+          <div class="numbers" id="left">-:-</div>
+          <select disabled>
+            <option class="firstSelect" value="start">-</option>
+            <option value=">">&gt;</option>
+            <option value="<">&lt;</option>
+            <option value="=">=</option>
+          </select>
+          <div class="numbers" id="right">-:-</div>
+          <button id="compStart">Start</button>
+        </div>
+      </div>
+    </div>
+    <div class="item title" id="piTitle">Can You Remember Pi?</div>
+    <div class="item">
+      <div class="panel left pi">
+        <form>
+          <div class="boxy"><label>Type Pi here</label><input type="number" id="guessPi"></div>
+        </form>
+      </div>
+      <div class="panel right pi">
+        <div class="output"><span class="span2" id="piInput">Type Pi</span></div>
+
+      </div>
+    </div>
+    <div class="item title" id="myAv">Pretty Average (Press submit when done)</div>
+    <div class="item">
+      <div class="panel middle">
+        <div class="comp form1">
+          <form id="myForm">
+            <div class="box"><label>Press enter to add more</label>
+              <input type="number" id="num"></div>
+          </form>
+          <button id="avg">Average</button>
+        </div>
+      </div>
+    </div>
+    <div class="item title" id="Ogame">Operator Game</div>
+    <div class="item">
+      <div class="panel modul left ">
+        <div class="radio">
+          <label>
+            <input id="add" class="mod" type="radio" name="mathOperand" value="+" checked>Addition (+)
+          </label>
+          <label>
+            <input id="sub" class="mod" type="radio" name="mathOperand" value="-">Subtraction (-)
+          </label>
+          <label>
+            <input id="mult" class="mod" type="radio" name="mathOperand" value="*">Multiplication (*)
+          </label>
+          <label>
+            <input id="div" class="mod" type="radio" name="mathOperand" value="/">Division (/)
+          </label>
+          <label>
+            <input id="perc" class="mod" type="radio" name="mathOperand" value="%">Modulus (%)
+          </label>
+          <label>
+            <input id="exp" class="mod" type="radio" name="mathOperand" value="**">Exponentiation (**)
+          </label>
+        </div>
+      </div>
+      <div class="panel right ">
+        <div class="output">
+          <label class="center">Please input numbers</label>
+          <form class="math">
+            <input type="number" id="first">
+            <div class="operand">+</div>
+            <input type="number" id="second">
+            <button class="submit">=</button><br>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="item title">Settings</div>
+    <div class="item">
+      <div class="panel middle ">
+        <div class="comp form1">
+          <label>Click for Dark Mode</label>
+          <button id="onOff">On</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>

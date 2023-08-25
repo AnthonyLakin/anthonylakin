@@ -6,6 +6,19 @@ img {
   object-fit: cover;
 }
 
+
+  .bg {
+    position: absolute;
+    display: inline;
+    width: 100%;
+    filter: brightness(.6);
+    z-index: -1;
+    left: 0;
+    top: 0;
+    height: auto;
+  }
+
+
 .parallax {
   transition: transform .2s ease-out;
 }
@@ -23,6 +36,8 @@ img {
   left: 0;
   top: 0;
 }
+
+
 
 mat-grid-tile {
   //border: solid 1px white;

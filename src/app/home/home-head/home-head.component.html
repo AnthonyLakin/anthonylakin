@@ -1,6 +1,6 @@
 <div class="margins">
-<div class="imgWrapper" (scroll)="scrollHandler()">
-  <div #backLayer class="backgroundImg parallax"></div>
+<!--  <div #backLayer class="backgroundImg parallax"></div>-->
+  <img class="bg" #backLayer src="../../../assets/img/home/mountain5.png" alt="background image of mountains">
   <mat-grid-list cols="{{columnNum}}" rowHeight="fit">
     <mat-grid-tile [colspan]="1.25" [rowspan]="2" class="text">
       <div class="gridCell">
@@ -15,17 +15,13 @@
       <div class="imgContainer">
         <img #topLayer class="cutOut parallax" ngSrc="../../../assets/img/home/anthonyCutOut2.png" alt="anthony" priority fill></div>
     </mat-grid-tile>
-
     <mat-grid-tile [colspan]="colSpan1" [rowspan]="4">
       <div class="gridCell">
       <div class="linePath">
         <div class="arrowDown"></div>
         <div class="line"></div>
       </div></div>
-
     </mat-grid-tile>
   </mat-grid-list>
-
-</div>
 </div>
 

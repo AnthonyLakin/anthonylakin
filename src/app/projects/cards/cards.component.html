@@ -1,8 +1,10 @@
 <mat-grid-list cols="2" rowHeight="20em" [gutterSize]="'5vw'">
   <mat-grid-tile>
-    <mat-card>
-        <div class="topCard">
+    <mat-card (click)="openCard()"   [@cardState]="state" >
+<!--      [routerLink]="['/projects/learn']" (click)="openCard()" -->
+      <div class="topCard">
           <img src="./assets/img/projects/cardIMG.jpg" alt="Photo of a Shiba Inu">
+<!--          <router-outlet></router-outlet>-->
         </div>
         <div class="bottomCard">
           <mat-card-title>Simple card</mat-card-title>
@@ -22,7 +24,7 @@
     </mat-card>
   </mat-grid-tile>
   <mat-grid-tile>
-    <mat-card>
+    <mat-card >
       <div class="topCard">
         <img src="./assets/img/projects/cardIMG.jpg" alt="Photo of a Shiba Inu">
       </div>
@@ -33,7 +35,7 @@
     </mat-card>
   </mat-grid-tile>
   <mat-grid-tile>
-    <mat-card>
+    <mat-card >
       <div class="topCard">
         <img src="./assets/img/projects/cardIMG.jpg" alt="Photo of a Shiba Inu">
       </div>
