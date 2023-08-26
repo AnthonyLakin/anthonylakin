@@ -1,4 +1,4 @@
-<mat-grid-list cols="2" rowHeight="20em" [gutterSize]="'5vw'">
+<mat-grid-list cols="{{columnNum}}" rowHeight="25em" [gutterSize]="'5vw'" >
   <mat-grid-tile>
     <mat-card (click)="openCard()"   [@cardState]="state" >
 <!--      [routerLink]="['/projects/learn']" (click)="openCard()" -->
