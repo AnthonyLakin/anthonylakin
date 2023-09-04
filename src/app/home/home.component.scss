@@ -8,6 +8,9 @@
 
 app-navbar {
   padding: 0 !important;
+  position: sticky;
+  z-index: 5;
+  top: 0;
 }
 
 app-projects-wrapper {
@@ -20,6 +23,10 @@ app-home-body2 {
 
 app-footer {
   background-color: var(--footerBG);
+}
+
+.content {
+
 }
 
 

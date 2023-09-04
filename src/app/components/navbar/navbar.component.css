@@ -8,10 +8,9 @@ a {
 }
 
 mat-toolbar {
-  position: sticky;
-  z-index: 20;
-  top: 0;
+  height: 4em;
 }
+
 
 .ooops {
   opacity: .2;

@@ -1,6 +1,15 @@
 <app-navbar></app-navbar>
+<div class="content">
 <app-header [headerTitle]="dataTitle"></app-header>
 <div class="margins">
-<app-cards></app-cards>
+<app-cards (childEvent)="checkState($event)"></app-cards>
 </div>
 <app-footer></app-footer>
+</div>
+<div class="routeContainer"  [@routeAnimations]="myOutlet && myOutlet.activatedRouteData
+      && myOutlet.activatedRouteData['animation']">
+  <router-outlet #myOutlet=outlet ></router-outlet>
+</div>
+
+
+

@@ -1,3 +1,25 @@
 app-header {
-  z-index: 10;
+  z-index: 4;
 }
+
+app-navbar {
+  padding: 0 !important;
+  position: sticky;
+  z-index: 5;
+  top: 0;
+}
+
+
+
+.routeContainer {
+  width: 100%;
+  height: calc(100% - 4em);
+  bottom: -100%;
+  position: absolute;
+  background-color: white;
+  //display: none;
+}
+
+
+
+

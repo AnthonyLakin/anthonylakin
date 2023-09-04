@@ -1,6 +1,6 @@
 /* Anthony Lakin, 7-24-20 */
 
-html {
+.body {
   /* color variables */
   --white: #fff;
   --light-blue: #57B2FF;
@@ -11,17 +11,18 @@ html {
   --darker-grey: #595959;
   --lighter-blue: #59B4FF;
   --curve: .2em;
-  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
-body {
+.body {
   background-color: #e8e8e8;
+  width: 100%;
+  height: 100%;
   font-family: Arial, serif, 'Times New Roman', Times;
 }
 

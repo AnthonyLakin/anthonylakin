@@ -13,9 +13,9 @@ import {provideAnimations} from "@angular/platform-browser/animations";
 
 export const routes: Route[] = [
   { path: '', component: HomeComponent},
-  { path: 'projects', component: ProjectsComponent,
+  { path: 'projects', component: ProjectsComponent, data: {animation: 'closed'},
   children: [
-    {path: 'learn', component: App1Component}
+    {path: 'learn', component: App1Component, data: {animation: 'open'}}
   ]},
   { path: 'aboutme', component: OoopsComponent},
   { path: 'connect', component: OoopsComponent },

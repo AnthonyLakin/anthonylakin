@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {AfterViewInit, Component, ElementRef} from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,5 +9,11 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./app1.component.css']
 })
 export class App1Component {
+
+  // constructor(private elementRef: ElementRef) {
+  // }
+  // ngAfterViewInit() {
+  //   this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = 'red'
+  // }
 
 }
