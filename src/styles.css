@@ -3,8 +3,17 @@ body {
   margin: 0;
 }
 
+.routeContainer {
+  width: 100%;
+  height: calc(100% - 4em);
+  bottom: -100%;
+  position: fixed;
+  background-color: white;
+  display: none;
+}
+
 mat-grid-tile {
-  border: solid 2px white;
+  /*border: solid 2px white;*/
 }
 
 /*h1 {*/

@@ -1,6 +1,9 @@
 <div class="grid-container" >
   <div class="grid-item">
-    <mat-card (click)="triggerRoute()"  [routerLink]="['/projects/learn']" routerLinkActive="active">
+    <mat-card matRipple [matRippleCentered]="false"
+              [matRippleDisabled]="false"
+              [matRippleUnbounded]="false"
+              [matRippleRadius]="400"  (click)="triggerRoute()"  [routerLink]="['/projects/learn']" routerLinkActive="active">
       <div class="topCard">
           <img src="./assets/img/projects/cardIMG.jpg" alt="Photo of a Shiba Inu">
         </div>

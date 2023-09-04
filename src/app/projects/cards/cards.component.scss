@@ -14,10 +14,15 @@ mat-card {
   height: 30em;
   padding: 0;
   background-color: #4f4f4f;
+  transition: .3s ease-in-out transform;
   * {
     color: var(--white);
   }
 
+}
+
+mat-card:active {
+  transform: scale(.8);
 }
 
 .topCard {

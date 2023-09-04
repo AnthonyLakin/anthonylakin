@@ -7,6 +7,7 @@ import {FooterComponent} from "../components/footer/footer.component";
 import {ProjectsWrapperComponent} from "./projects-wrapper/projects-wrapper.component";
 import {NavbarComponent} from "../components/navbar/navbar.component";
 import {BarsComponent} from "../components/bars/bars.component";
+import {RouterOutlet} from "@angular/router";
 
 
 @Component({
@@ -22,7 +23,8 @@ import {BarsComponent} from "../components/bars/bars.component";
         FooterComponent,
         ProjectsWrapperComponent,
         NavbarComponent,
-        BarsComponent
+        BarsComponent,
+        RouterOutlet
     ]
 })
 export class HomeComponent implements AfterViewInit{

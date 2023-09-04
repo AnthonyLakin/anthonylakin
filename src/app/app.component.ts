@@ -12,7 +12,7 @@ import {NavbarComponent} from "./components/navbar/navbar.component";
     RouterOutlet,
     RouterLinkWithHref,
     NavbarComponent
-  ]
+  ],
 })
 export class AppComponent {
   title = 'anthonylakin';

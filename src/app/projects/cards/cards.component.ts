@@ -4,11 +4,12 @@ import {MatCardModule} from "@angular/material/card";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatButtonModule} from "@angular/material/button";
 import {RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
+import {MatRippleModule} from "@angular/material/core";
 
 @Component({
   selector: 'app-cards',
   standalone: true,
-  imports: [CommonModule, MatCardModule, MatGridListModule, NgOptimizedImage, MatButtonModule, RouterLink, RouterLinkActive, RouterOutlet],
+  imports: [CommonModule, MatCardModule, MatGridListModule, NgOptimizedImage, MatButtonModule, RouterLink, RouterLinkActive, RouterOutlet, MatRippleModule],
   templateUrl: './cards.component.html',
   styleUrls: ['./cards.component.scss'],
   animations: []

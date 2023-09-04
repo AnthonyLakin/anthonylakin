@@ -25,14 +25,16 @@ import {trigger, transition, group, query, style, animate, state} from '@angular
     animations: [
       trigger('routeAnimations', [
         state('open', style({
-          bottom: 0
+          bottom: 0,
+          display: 'block'
         })),
         state('closed', style({
-          bottom: '*'
+          bottom: '*',
+          display: '*'
 
         })),
         transition('* <=> *', [
-          animate('.5s ease-in-out')
+          animate('.3s cubic-bezier(0.06, 0.38, 0.11, 0.88)')
         ]),
 
       ])
