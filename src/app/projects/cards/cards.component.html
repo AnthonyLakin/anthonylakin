@@ -1,5 +1,5 @@
-<mat-grid-list cols="2" rowHeight="25em" [gutterSize]="'5vw'" >
-  <mat-grid-tile>
+<div class="grid-container" >
+  <div class="grid-item">
     <mat-card (click)="triggerRoute()"  [routerLink]="['/projects/learn']" routerLinkActive="active">
       <div class="topCard">
           <img src="./assets/img/projects/cardIMG.jpg" alt="Photo of a Shiba Inu">
@@ -9,8 +9,8 @@
           <mat-card-subtitle>This is some random text to describe the dog above</mat-card-subtitle>
         </div>
     </mat-card>
-  </mat-grid-tile>
-  <mat-grid-tile>
+  </div>
+  <div class="grid-item">
     <mat-card (click)="triggerRoute()" [routerLink]="['/projects/learn']" routerLinkActive="active">
       <div class="topCard">
         <img src="./assets/img/projects/cardIMG.jpg" alt="Photo of a Shiba Inu">
@@ -20,8 +20,8 @@
         <mat-card-subtitle>This is some random text to describe the dog above</mat-card-subtitle>
       </div>
     </mat-card>
-  </mat-grid-tile>
-  <mat-grid-tile>
+  </div>
+  <div class="grid-item">
     <mat-card >
       <div class="topCard">
         <img src="./assets/img/projects/cardIMG.jpg" alt="Photo of a Shiba Inu">
@@ -31,8 +31,8 @@
         <mat-card-subtitle>This is some random text to describe the dog above</mat-card-subtitle>
       </div>
     </mat-card>
-  </mat-grid-tile>
-  <mat-grid-tile>
+  </div>
+  <div class="grid-item">
     <mat-card >
       <div class="topCard">
         <img src="./assets/img/projects/cardIMG.jpg" alt="Photo of a Shiba Inu">
@@ -42,5 +42,5 @@
         <mat-card-subtitle>This is some random text to describe the dog above</mat-card-subtitle>
       </div>
     </mat-card>
-  </mat-grid-tile>
-</mat-grid-list>
+  </div>
+</div>
