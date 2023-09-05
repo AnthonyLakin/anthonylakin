@@ -34,7 +34,7 @@ import {trigger, transition, group, query, style, animate, state} from '@angular
 
         })),
         transition('* <=> *', [
-          animate('.3s cubic-bezier(0.06, 0.38, 0.11, 0.88)')
+          animate('0.3s .3s cubic-bezier(0.06, 0.38, 0.11, 0.88)')
         ]),
 
       ])

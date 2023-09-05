@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WindowComponent } from './window.component';
+import { App2Component } from './app2.component';
 
-describe('WindowComponent', () => {
-  let component: WindowComponent;
-  let fixture: ComponentFixture<WindowComponent>;
+describe('App2Component', () => {
+  let component: App2Component;
+  let fixture: ComponentFixture<App2Component>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [WindowComponent]
+      imports: [App2Component]
     });
-    fixture = TestBed.createComponent(WindowComponent);
+    fixture = TestBed.createComponent(App2Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

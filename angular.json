@@ -31,7 +31,10 @@
               "src/styles.css",
               "src/theme.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/JavaScript/app1/script.js",
+              "src/assets/JavaScript/app2/script.js"
+            ]
           },
           "configurations": {
             "production": {

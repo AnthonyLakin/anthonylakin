@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-window',
+  selector: 'app-app2',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './window.component.html',
-  styleUrls: ['./window.component.scss']
+  templateUrl: './app2.component.html',
+  styleUrls: ['./app2.component.css']
 })
-export class WindowComponent {
+export class App2Component {
 
 }
