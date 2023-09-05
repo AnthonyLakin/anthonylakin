@@ -2,8 +2,8 @@
 
 
 //This grabs the first elemnt with the header tag(getElementsByTagName) and changes its text to the prompt
-let yourName = prompt("Hello what's your name?", "Bot");
-
+// let yourName = prompt("Hello what's your name?", "Bot");
+let yourName = "Anthony Lakin";
 
 
 //Modal Box, alert
